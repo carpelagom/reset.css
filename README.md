@@ -80,6 +80,12 @@ Sets `font-family` to `--reset-font-family-mono`
 
 Sets default link color to: `--reset-link-color`.
 
+
+#### .external
+
+Add `.external` to a link to automatically add a icon &21D7 to the right of it.
+
+
 ## Utility classes
 
 

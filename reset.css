@@ -49,6 +49,11 @@ a {
   color: var(--reset-link-color);
 }
 
+.external:after {
+  content: "\21D7";
+  padding-left: .1em;
+}
+
 
 .box {
   display: inline-block;
