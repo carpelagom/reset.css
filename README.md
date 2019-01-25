@@ -26,6 +26,19 @@ Variables defined in `:root`:
 --ease-in-out-quint
 --ease-in-out-expo
 --ease-in-out-circ
+--reset-link-color: #4b00da;
+--reset-font-family-sans: "IBM Plex Sans";
+--reset-font-family-mono: "IBM Plex Mono";
+```
+
+To override a variable in your own stylesheet:
+
+```css
+:root {
+  ...
+  --<variable>: <value>;
+  ...
+}
 ```
 
 ## html element
@@ -40,23 +53,14 @@ if you want an element to use `box-sizing: content-box` instead, apply the
 
 ### body
 
-Applies `font-family: var(--reset-font-family-sans);` ("IBM Plex Sans")
+Sets `font-family` to `--reset-font-family-sans`
 
 
 ### pre, code
 
-Applies `font-family: var(--reset-font-family-mono);` ("IBM Plex Mono")
+Sets `font-family` to `--reset-font-family-mono`
 
 ### a
 
-Applies a nicer link color instead of the default blue.
+Sets default link color to: `--reset-link-color`.
 
-To override:
-
-```css
-:root {
-  ...
-  --reset-link-color: <color>;
-  ...
-}
-```
