@@ -24,6 +24,7 @@
   --reset-link-color: #4b00da;
   --reset-font-family-sans: "IBM Plex Sans";
   --reset-font-family-mono: "IBM Plex Mono";
+  --reset-link-hover-underline-animation-color: #0087ca;
 }
 
 html {
@@ -70,6 +71,7 @@ a {
     transform: rotate(360deg);
   }
 }
+
 .donut-spinner {
   display: inline-block;
   border: 4px solid rgba(0, 0, 0, 0.1);
@@ -107,7 +109,7 @@ a {
 .hover-underline-animation {
   display: inline-block;
   position: relative;
-  color: #0087ca;
+  color: var(--reset-link-hover-underline-animation-color);
 }
 .hover-underline-animation::after {
   content: '';
@@ -117,10 +119,11 @@ a {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #0087ca;
+  background-color: var(--reset-link-hover-underline-animation-color);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
+
 .hover-underline-animation:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
@@ -141,6 +144,7 @@ a {
 .overflow-scroll-gradient {
   position: relative;
 }
+
 .overflow-scroll-gradient::after {
   content: '';
   position: absolute;
@@ -153,6 +157,7 @@ a {
   ); /* transparent keyword is broken in Safari */
   pointer-events: none;
 }
+
 .overflow-scroll-gradient__scroller {
   overflow-y: scroll;
   background: white;
@@ -227,5 +232,4 @@ input[type='checkbox']:checked + .switch {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  # TBD: Needs width?
 }
