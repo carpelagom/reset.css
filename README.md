@@ -2,6 +2,7 @@
 
 Reset &amp; basic styles
 
+Credits: https://30-seconds.github.io/30-seconds-of-css/
 
 ## :root variables
 
