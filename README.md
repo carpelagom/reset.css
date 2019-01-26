@@ -4,17 +4,23 @@ Reset &amp; basic styles
 
 ## "installation"
 
-Using wget:
+Using wget..
 
 ```sh
 cd some/where/
 wget https://raw.githubusercontent.com/carpelagom/reset.css/master/reset.css
 ```
 
-or in a ViM buffer:
+...or in a ViM buffer:
 
 ```vim
 :r!curl -fLs https://raw.githubusercontent.com/carpelagom/reset.css/master/reset.css
+```
+
+...or in HTML:
+
+```html
+<link rel="stylesheet" href="https://raw.githack.com/carpelagom/reset.css/master/reset.css">
 ```
 
 ## :root variables
